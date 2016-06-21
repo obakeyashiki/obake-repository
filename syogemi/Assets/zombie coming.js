@@ -46,6 +46,10 @@ function OnTriggerEnter( colobj : Collider ){
 //isEnableをtrueにして入ったオブジェクトをtarget変数に入れます
          isEnable =  true;
          target= colobj.gameObject;
+
+
+         //音鳴らします
+         GetComponent(AudioSource).Play();
     }
 }
 
